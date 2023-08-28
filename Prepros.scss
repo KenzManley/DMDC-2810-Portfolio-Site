@@ -1,35 +1,130 @@
-body {text-align: center;}
+body {
+  text-align: center;
+}
 
 h1 {
-    background-color: #33aeff;
-    color: white;
-    font-size: 3em;
-    margin-bottom: 1em;
+  background-color: #33aeff;
+  color: white;
+  font-size: 3em;
+  margin-bottom: 1em;
 }
 
-//mixin
-@mixin btn($color1, $radius) {
-    color: #fff;
-    display: inline-block;
-    font-size: 2em;
-    margin-bottom: 1em;
-    padding: 1em 0;
-    text-align: center;
-    text-decoration: none;
-    width: 20%;
-
-    border-radius: $radius;
-
-    background-color: #444444;
-    background-image: -webkit-linear-gradient(top, $color1, darken($color1, 20%));
-    background-image: linear-gradient(to bottom, $color1, darken($color1, 20%));
+.btn-a {
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  border-radius: 1em;
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#990000));
+  background-image: linear-gradient(to bottom, red, #990000);
 }
 
-.btn-a{ @include btn(red, 1em);}
-.btn-b { @include btn(green, .5em);}
-.btn-c { @include btn(blue, 5em);}
-.btn-d { @include btn(orange, 50%);}
-.btn-e { @include btn(orange, 1em);}
-.btn-f { @include btn(blue, .5em);}
-.btn-g { @include btn(green, 5em);}
-.btn-h { @include btn(red, 50%);}
+.btn-b {
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  border-radius: 0.5em;
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(green), to(#001a00));
+  background-image: linear-gradient(to bottom, green, #001a00);
+}
+
+.btn-c {
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  border-radius: 5em;
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#000099));
+  background-image: linear-gradient(to bottom, blue, #000099);
+}
+
+.btn-d {
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  border-radius: 50%;
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(orange), to(#996300));
+  background-image: linear-gradient(to bottom, orange, #996300);
+}
+
+.btn-e {
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  border-radius: 1em;
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(orange), to(#996300));
+  background-image: linear-gradient(to bottom, orange, #996300);
+}
+
+.btn-f {
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  border-radius: 0.5em;
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#000099));
+  background-image: linear-gradient(to bottom, blue, #000099);
+}
+
+.btn-g {
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  border-radius: 5em;
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(green), to(#001a00));
+  background-image: linear-gradient(to bottom, green, #001a00);
+}
+
+.btn-h {
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  border-radius: 50%;
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(#990000));
+  background-image: linear-gradient(to bottom, red, #990000);
+}
