@@ -1,0 +1,35 @@
+body {text-align: center;}
+
+h1 {
+    background-color: #33aeff;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+//mixin
+@mixin btn($color1, $radius) {
+    color: #fff;
+    display: inline-block;
+    font-size: 2em;
+    margin-bottom: 1em;
+    padding: 1em 0;
+    text-align: center;
+    text-decoration: none;
+    width: 20%;
+
+    border-radius: $radius;
+
+    background-color: #444444;
+    background-image: -webkit-linear-gradient(top, $color1, darken($color1, 20%));
+    background-image: linear-gradient(to bottom, $color1, darken($color1, 20%));
+}
+
+.btn-a{ @include btn(red, 1em);}
+.btn-b { @include btn(green, .5em);}
+.btn-c { @include btn(blue, 5em);}
+.btn-d { @include btn(orange, 50%);}
+.btn-e { @include btn(orange, 1em);}
+.btn-f { @include btn(blue, .5em);}
+.btn-g { @include btn(green, 5em);}
+.btn-h { @include btn(red, 50%);}
